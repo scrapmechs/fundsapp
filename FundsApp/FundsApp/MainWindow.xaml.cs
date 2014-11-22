@@ -22,12 +22,13 @@ namespace FundsApp
     {
         public MainWindow()
         {
-            InitializeComponent();
+             InitializeComponent();
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             App.Current.Shutdown();
         }
+
     }
 }

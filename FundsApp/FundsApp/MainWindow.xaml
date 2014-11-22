@@ -2,8 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" WindowStyle="None">
-    <Grid Background="#FF80AACD">
+    <Grid Background="#FF80AACD" Margin="0,0,0,-171">
         <Rectangle Fill="#FF6A92B4" HorizontalAlignment="Left" Height="39" Stroke="Black" VerticalAlignment="Top" Width="517"/>
-        <Button Name="btnExit" Content="X" Margin="478,6,4,310" Background="#FFF50000" BorderBrush="#FF7C0000" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Nasalization" Click="btnExit_Click"/>
+        <Button Name="btnExit" Content="X" Margin="475,4,10,476" Background="#FFF50000" BorderBrush="#FF7C0000" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Nasalization" Click="btnExit_Click"/>
+        <Label Name ="lblTitle" Content="FUNDS APP" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="105" Background="#FF467197" BorderBrush="#FF2A5378" Foreground="#FF3F9C98" BorderThickness="2" FontFamily="Nasalization"/>
+        <Label Name ="lblBalance" Content="Balance:" HorizontalAlignment="Left" Margin="233,5,0,0" VerticalAlignment="Top" Width="188" Background="White" BorderBrush="#FF597995" Foreground="#FF168F37" BorderThickness="2"/>
     </Grid>
 </Window>
