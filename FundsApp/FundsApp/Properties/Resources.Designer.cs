@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FundsApp.Properties
-{
-
-
+namespace FundsApp.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,142 @@ namespace FundsApp.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FundsApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;configuration&gt;
+        ///    &lt;startup&gt; 
+        ///        &lt;supportedRuntime version=&quot;v4.0&quot; sku=&quot;.NETFramework,Version=v4.5&quot; /&gt;
+        ///    &lt;/startup&gt;
+        ///&lt;/configuration&gt;.
+        /// </summary>
+        internal static string App {
+            get {
+                return ResourceManager.GetString("App", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Collections.Generic;
+        ///using System.Configuration;
+        ///using System.Data;
+        ///using System.Linq;
+        ///using System.Threading.Tasks;
+        ///using System.Windows;
+        ///
+        ///namespace FundsApp
+        ///{
+        ///    /// &lt;summary&gt;
+        ///    /// Interaction logic for App.xaml
+        ///    /// &lt;/summary&gt;
+        ///    public partial class App : Application
+        ///    {
+        ///    }
+        ///}
+        ///.
+        /// </summary>
+        internal static string App_xaml {
+            get {
+                return ResourceManager.GetString("App_xaml", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Application x:Class=&quot;FundsApp.App&quot;
+        ///             xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///             xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        ///             StartupUri=&quot;MainWindow.xaml&quot;&gt;
+        ///    &lt;Application.Resources&gt;
+        ///         
+        ///    &lt;/Application.Resources&gt;
+        ///&lt;/Application&gt;
+        ///.
+        /// </summary>
+        internal static string App1 {
+            get {
+                return ResourceManager.GetString("App1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;Window x:Class=&quot;FundsApp.MainWindow&quot;
+        ///        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        ///        Title=&quot;MainWindow&quot; Height=&quot;350&quot; Width=&quot;525&quot; WindowStyle=&quot;None&quot;&gt;
+        ///    &lt;Grid Background=&quot;#FF80AACD&quot; Margin=&quot;0,0,0,-171&quot;&gt;
+        ///        &lt;Rectangle Fill=&quot;#FF6A92B4&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;39&quot; Stroke=&quot;Black&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;517&quot;/&gt;
+        ///        &lt;Button Name=&quot;btnExit&quot; Content=&quot;X&quot; Margin=&quot;475,6,5,479&quot; Background=&quot;# [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MainWindow {
+            get {
+                return ResourceManager.GetString("MainWindow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Collections.Generic;
+        ///using System.Linq;
+        ///using System.Text;
+        ///using System.Threading.Tasks;
+        ///using System.Windows;
+        ///using System.Windows.Controls;
+        ///using System.Windows.Data;
+        ///using System.Windows.Documents;
+        ///using System.Windows.Input;
+        ///using System.Windows.Media;
+        ///using System.Windows.Media.Imaging;
+        ///using System.Windows.Navigation;
+        ///using System.Windows.Shapes;
+        ///
+        ///namespace FundsApp
+        ///{
+        ///    /// &lt;summary&gt;
+        ///    /// Interaction logic for MainWindow.xaml
+        ///    /// &lt;/summary&gt;
+        ///    p [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MainWindow_xaml {
+            get {
+                return ResourceManager.GetString("MainWindow_xaml", resourceCulture);
             }
         }
     }

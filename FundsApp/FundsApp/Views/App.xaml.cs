@@ -5,8 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using FundsApp.Views;
 
-namespace FundsApp
+namespace FundsApp.Views
 {
     /// <summary>
     /// Interaction logic for App.xaml
