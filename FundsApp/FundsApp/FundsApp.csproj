@@ -58,6 +58,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="Model\Account.cs" />
+    <Compile Include="ViewModel\Acccounts Manager.cs" />
+    <Compile Include="ViewModel\AppManager.cs" />
     <Compile Include="Views\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -94,9 +96,7 @@
   <ItemGroup>
     <None Include="Views\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

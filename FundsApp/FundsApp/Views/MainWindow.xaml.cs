@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FundsApp.Views;
+using FundsApp.ViewModel;
 
 namespace FundsApp.Views
 {
@@ -24,6 +25,9 @@ namespace FundsApp.Views
         public MainWindow()
         {
              InitializeComponent();
+
+            // Data Binding Account manager
+             DataContext = new Acccounts_Manager();
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)

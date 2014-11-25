@@ -6,11 +6,12 @@
         <Rectangle Fill="#FF6A92B4" HorizontalAlignment="Left" Height="39" Stroke="Black" VerticalAlignment="Top" Width="517"/>
         <Button Name="btnExit" Content="X" Margin="475,6,5,479" Background="#FFF50000" BorderBrush="#FF7C0000" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Nasalization" Click="btnExit_Click"/>
         <Label Name ="lblTitle" Content="FUNDS APP" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Background="#FF467197" BorderBrush="#FF2A5378" Foreground="#FF3F9C98" BorderThickness="2" FontFamily="Nasalization"/>
-        <Label Name ="lblBalText" Content="Balance:" HorizontalAlignment="Left" Margin="169,0,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF72D18C" BorderThickness="0" FontWeight="Bold" FontSize="18"/>
-        <TextBox Name ="txtBxBal" HorizontalAlignment="Left" Height="23" Margin="259,10,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="180" FontFamily="Nasalization" RenderTransformOrigin="0.5,0.5" BorderThickness="3" BorderBrush="#FF467197" Background="#FFEAEAEA" Foreground="#FF129705" SelectionBrush="{x:Null}" FontWeight="Bold"/>
+        <Label Name ="lblBalText" Content="Balance" HorizontalAlignment="Left" Margin="174,5,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF72D18C" BorderThickness="0" FontWeight="Bold" FontSize="18"/>
+        <TextBox Name ="txtBxBal" HorizontalAlignment="Left" Height="23" Margin="259,10,0,0" TextWrapping="Wrap" Text="{Binding MainAccount.CurrentAmount, StringFormat=|{0:c}}" VerticalAlignment="Top" Width="109" FontFamily="Arial" RenderTransformOrigin="0.5,0.5" BorderThickness="3" BorderBrush="#FF467197" Background="#FFEAEAEA" Foreground="#FF129705" SelectionBrush="{x:Null}" FontWeight="Bold"/>
         <Button Name ="btnOpen" Content="O" HorizontalAlignment="Left" Margin="121,7,0,0" VerticalAlignment="Top" Width="25" Height="24" Background="#FFDDDDDD" FontSize="15" ToolTip="Save"/>
         <Button Name ="btnSave" Content="S" HorizontalAlignment="Left" Margin="94,7,0,0" VerticalAlignment="Top" Width="25" Height="24" Background="#FFDDDDDD" FontSize="15" ToolTip="Save"/>
-        <Grid HorizontalAlignment="Left" Height="49" Margin="10,48,0,0" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.45,-0.864">
+        <Button Name="btnUpdate" Content="Update" Margin="374,10,83,474" FontFamily="Nasalization"/>
+        <Grid Name ="grdSlot1" HorizontalAlignment="Left" Height="49" Margin="10,48,0,0" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.45,-0.864">
             <TextBox Name ="txtBxBillName" HorizontalAlignment="Left" Height="26" Margin="1,20,0,0" TextWrapping="Wrap" Text="Enter Bill Name" VerticalAlignment="Top" Width="198" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
             <Label Content="Bill Name" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Width="198" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
             <TextBox Name ="txtBxBilBal" HorizontalAlignment="Left" Height="26" Margin="206,20,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="67" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
@@ -20,6 +21,6 @@
             <TextBox Name ="txtBxTotal" HorizontalAlignment="Left" Height="26" Margin="378,20,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="67" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
             <Label Content="Total" HorizontalAlignment="Left" Margin="378,0,0,0" VerticalAlignment="Top" Width="67" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
         </Grid>
-        
+
     </Grid>
 </Window>
