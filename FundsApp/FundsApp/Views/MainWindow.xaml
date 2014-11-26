@@ -12,14 +12,7 @@
         <Button Name ="btnSave" Content="S" HorizontalAlignment="Left" Margin="94,7,0,0" VerticalAlignment="Top" Width="25" Height="24" Background="#FFDDDDDD" FontSize="15" ToolTip="Save"/>
         <Button Name="btnUpdate" Content="Update" Margin="374,10,83,474" FontFamily="Nasalization"/>
         <Grid Name ="grdSlot1" HorizontalAlignment="Left" Height="49" Margin="10,48,0,0" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.45,-0.864">
-            <TextBox Name ="txtBxBillName" HorizontalAlignment="Left" Height="26" Margin="1,20,0,0" TextWrapping="Wrap" Text="Enter Bill Name" VerticalAlignment="Top" Width="198" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
-            <Label Content="Bill Name" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Width="198" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
-            <TextBox Name ="txtBxBilBal" HorizontalAlignment="Left" Height="26" Margin="206,20,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="67" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
-            <Label Content="Bill Balance" HorizontalAlignment="Left" Margin="206,0,0,0" VerticalAlignment="Top" Width="67" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
-            <TextBox x:Name ="txtBxPay" HorizontalAlignment="Left" Height="26" Margin="290,20,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="67" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
-            <Label Content="Payment" HorizontalAlignment="Left" Margin="290,0,0,0" VerticalAlignment="Top" Width="67" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
-            <TextBox Name ="txtBxTotal" HorizontalAlignment="Left" Height="26" Margin="378,20,0,0" TextWrapping="Wrap" Text="$0.00" VerticalAlignment="Top" Width="67" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
-            <Label Content="Total" HorizontalAlignment="Left" Margin="378,0,0,0" VerticalAlignment="Top" Width="67" Height="20" FontFamily="Arial" FontWeight="Bold" FontSize="10"/>
+           
         </Grid>
 
     </Grid>
