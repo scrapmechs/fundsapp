@@ -30,10 +30,5 @@ namespace FundsApp.Views
              DataContext = new Acccounts_Manager();
         }
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
-        {
-            App.Current.Shutdown();
-        }
-
     }
 }

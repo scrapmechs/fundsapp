@@ -10,5 +10,6 @@ namespace FundsApp.ViewModel
 {
     class AppManager
     {
+        public float MyProperty { get; set; }
     }
 }
