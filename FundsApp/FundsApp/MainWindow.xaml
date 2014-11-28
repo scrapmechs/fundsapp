@@ -1,17 +1,17 @@
-﻿<Window x:Class="FundsApp.Views.MainWindow"
+﻿<Window x:Class="FundsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="400" Width="600" WindowStyle="SingleBorderWindow">
+        Title="MainWindow" Height="400" Width="620" WindowStyle="SingleBorderWindow">
     <Grid Background="#FF80AACD" >
         <Rectangle Fill="#FF6A92B4" Height="39" Stroke="Black" VerticalAlignment="Top" Panel.ZIndex="-1" />
-        <StackPanel>
+        <StackPanel Name="stkPan">
             <WrapPanel>
                 <Label x:Name ="lblTitle" Content="FUNDS APP" Background="#FF467197" BorderBrush="#FF2A5378" Width="90"  Foreground="#FF3F9C98" BorderThickness="2" FontFamily="Nasalization" Margin="5,2,5,2"/>
                 <Button x:Name ="btnOpen" Content="O" Width="25" Height="24" Margin="2,2,2,2" Background="#FFDDDDDD" FontSize="15" ToolTip="Save"/>
                 <Button x:Name ="btnSave" Content="S" Width="25" Height="24" Margin="2,2,2,2" Background="#FFDDDDDD" FontSize="15" ToolTip="Save"/>
-                <Button x:Name="btnAdd" Content="ADD" Width="50" Height="24" Margin="2,2,2,2" FontFamily="Nasalization"/>
+                <Button x:Name="btnAdd" Content="ADD" Width="50" Height="24" Margin="2,2,2,2" FontFamily="Nasalization" Click="btnAdd_Click"/>
                 <Label x:Name ="lblBalText" Content="Balance" Background="{x:Null}" Margin="2,2,2,2" Foreground="#FF72D18C" BorderThickness="0" FontWeight="Bold" FontSize="18"/>
-                <TextBox x:Name ="txtBxBal" Text="{Binding MainAccount.CurrentAmount, StringFormat=|{0:c}}" FontFamily="Arial" Width="200" BorderThickness="3" BorderBrush="#FF467197" Background="#FFEAEAEA" Foreground="#FF129705" SelectionBrush="{x:Null}" FontWeight="Bold" TextAlignment="Center" Margin="2,2,2,2"/>
+                <TextBox x:Name ="txtBxBal" Text="{Binding MainAccount.CurrentAmount, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, NotifyOnSourceUpdated=True}" FontFamily="Arial" Width="200" BorderThickness="3" BorderBrush="#FF467197" Background="#FFEAEAEA" Foreground="#FF129705" SelectionBrush="{x:Null}" FontWeight="Bold" TextAlignment="Center" Margin="2,2,2,2" />
             </WrapPanel>
         </StackPanel>
 

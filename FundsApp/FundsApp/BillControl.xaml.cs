@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FundsApp.Views
+namespace FundsApp
 {
     /// <summary>
     /// Interaction logic for BillControl.xaml
@@ -23,6 +23,16 @@ namespace FundsApp.Views
         public BillControl()
         {
             InitializeComponent();
+        }
+
+        private void btnRmove_Click(object sender, RoutedEventArgs e)
+        {
+            // remove Onclick
+            ((Panel)this.Parent).Children.Remove(this);
+        }
+
+        private void txtBxPay_TextChanged(object sender, TextChangedEventArgs e)
+        {
         }
     }
 }

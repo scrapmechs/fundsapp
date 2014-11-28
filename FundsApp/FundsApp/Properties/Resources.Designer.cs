@@ -121,10 +121,12 @@ namespace FundsApp.Properties {
         ///   Looks up a localized string similar to &lt;Window x:Class=&quot;FundsApp.MainWindow&quot;
         ///        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
         ///        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
-        ///        Title=&quot;MainWindow&quot; Height=&quot;350&quot; Width=&quot;525&quot; WindowStyle=&quot;None&quot;&gt;
-        ///    &lt;Grid Background=&quot;#FF80AACD&quot; Margin=&quot;0,0,0,-171&quot;&gt;
-        ///        &lt;Rectangle Fill=&quot;#FF6A92B4&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;39&quot; Stroke=&quot;Black&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;517&quot;/&gt;
-        ///        &lt;Button Name=&quot;btnExit&quot; Content=&quot;X&quot; Margin=&quot;475,6,5,479&quot; Background=&quot;# [rest of string was truncated]&quot;;.
+        ///        Title=&quot;MainWindow&quot; Height=&quot;400&quot; Width=&quot;600&quot; WindowStyle=&quot;SingleBorderWindow&quot;&gt;
+        ///    &lt;Grid Background=&quot;#FF80AACD&quot; &gt;
+        ///        &lt;Rectangle Fill=&quot;#FF6A92B4&quot; Height=&quot;39&quot; Stroke=&quot;Black&quot; VerticalAlignment=&quot;Top&quot; Panel.ZIndex=&quot;-1&quot; /&gt;
+        ///        &lt;StackPanel Name=&quot;stkPan&quot;&gt;
+        ///            &lt;WrapPanel&gt;
+        ///                &lt;Label x:Name =&quot;lblTitle&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MainWindow {
             get {

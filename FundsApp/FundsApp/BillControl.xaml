@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="FundsApp.BillControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignWidth="600">
+    <WrapPanel Name="wpMain" Orientation="Horizontal">
+        <Label Content="Bill Name:"/>
+        <TextBox Name ="txtBxBillName" HorizontalAlignment="Left" Margin="2,2,2,2" Height="auto" Text="Enter Bill Name" Width="208" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
+        <Label Content="Balance:"/>
+        <TextBox Name ="txtBxBilBal"  Text="$0.00" Width="50" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
+        <Label Content="Payment"/>
+        <TextBox x:Name ="txtBxPay" Text="$0.00" Width="50" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2" TextChanged="txtBxPay_TextChanged"/>
+        <Label Content="Total"/>
+        <TextBox Name ="txtBxTotal" Text="$0.00" Width="50" BorderBrush="#FF467197" SelectionBrush="{x:Null}" BorderThickness="2"/>
+        <Button Name="btnRmove" Width="20" Content="X" Background="Red" Foreground="White" Click="btnRmove_Click"/>
+    </WrapPanel>
+</UserControl>

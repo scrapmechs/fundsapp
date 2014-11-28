@@ -12,22 +12,29 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using FundsApp.Views;
-using FundsApp.ViewModel;
+using FundsApp;
 
-namespace FundsApp.Views
+namespace FundsApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public AppManager appManager;
+
         public MainWindow()
         {
              InitializeComponent();
+             // Start Apps manager
+             appManager = new AppManager();
 
-            // Data Binding Account manager
-             DataContext = new Acccounts_Manager();
+             appManager.SetAccountBal();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            appManager.CreateBill(stkPan);
         }
 
     }
